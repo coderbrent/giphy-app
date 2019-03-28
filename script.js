@@ -22,7 +22,7 @@ $(document.body).on("click", ".newBtn", function() {
     url: queryURL,
     method: "GET"
   }).then(function(data) { 
-    console.log("success got data", data);
+    console.log("success got data!", data);
     var card = $("<img>");
     let gif = data.data[0].images.original_mp4.mp4;
     console.log(gif);
